@@ -1,3 +1,8 @@
+
+* {
+    box-sizing: border-box;
+    position: relative;
+}
 body{
     font-family: Arial, sans-serif;
     margin: 0;
@@ -21,9 +26,164 @@ li{
     margin-right: 10px;
 }
 
-section{
+.introduction {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    gap: 10px;
+}
+
+.section1 {
+    flex: 0 0 70%;
+}
+
+.section2 {
+    flex: 0 0 calc(30% - 10px);
+}
+
+.section3 {
+    flex: 0 0 100%;
+}
+
+.introduction section{
+    border: 1px solid #000000;
+    position: relative;
+    padding: 10px;
+}
+
+section.section1 {
+    width: 80%;
+    float: left;
+}
+
+section.section2 {
+    width: 20%;
+    float: left;
+}
+
+section.section3 {
+    width: 100%;
+    clear: both;
+}
+
+
+h2.section1{
+    color: #ff0000;
+}
+p.section1{
+    font-size: 16px;
+}
+h2.section2{
+    color: #00ff00;
+}
+p.section2{
+    font-size: 16px;
+}
+h2.section3{
+    color: #0000ff;
+}
+p.section3{
+    font-size: 16px;
+}
+
+div.picturegallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+figure{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    display: inline-block;
+    text-align: center;
+}
+
+figurecaption{
+    margin-top: 5px;
+    font-style: italic;
+    color: #555555;
+}
+
+a{
+    color: #0066cc;
+    text-decoration: none;
+}
+
+div.links{
     margin: 20px;
     padding: 10px;
     border: 1px solid #000000;
+    
 }
 
+.links li{
+    margin-bottom: 10px;
+    display: inline-block;
+    width: auto;
+
+}
+
+.links a{
+    color: #ff6600;
+    text-decoration: underline;
+}
+
+div.tables{
+    margin: 50px;
+    overflow-x: auto;
+    
+}   
+
+table{
+    width: 50%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+th, td{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+@media screen and (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    div.picturegallery {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    div.links{
+        margin: 10px;
+        padding: 5px;
+    }
+
+    .links li{
+        margin-bottom: 5px;
+        display: block;
+
+    }
+
+    .section1 {
+    flex: 0 0 100%;
+    }
+
+    .section2 {
+    flex: 0 0 100%;
+    }
+
+    .section3 {
+    flex: 0 0 100%;
+    }
+}
