@@ -24,6 +24,15 @@ ul{
 li{
     display: inline;
     margin-right: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: ease-in 0.3s;
+    
+}
+
+li:hover{
+    -webkit-box-shadow: 2px 2px 10px 1px #4D4D4D;
+    box-shadow: 2px 2px 10px 1px #4D4D4D;
 }
 
 .introduction {
@@ -101,7 +110,7 @@ figure{
     text-align: center;
 }
 
-figurecaption{
+figcaption{
     margin-top: 5px;
     font-style: italic;
     color: #555555;
@@ -110,6 +119,10 @@ figurecaption{
 a{
     color: #0066cc;
     text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
 }
 
 div.links{
