@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style/style.css" />
+    <title>Category</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="/index.html">Hjem</a></li>
+        <li><a href="/Site/picture.html">Billeder</a></li>
+        <li><a href="/Site/links.html">Links</a></li>
+        <li><a href="/Site/tables.html">Tabeller</a></li>
+        <li><a href="#">Kategorier</a></li>
+      </ul>
+    </nav>
+    <h1>Category Administration</h1>
+    <p>Manage your categories here.</p>
+
+    <form id="categoryForm">
+      <input
+        type="text"
+        id="categoryName"
+        name="categoryName"
+        placeholder="Category Name"
+        required
+      />
+      <button type="submit">Add Category</button>
+    </form>
+
+    <hr />
+
+    <ul id="categoryList"></ul>
+
+    <script src="/JavaScript/category.js" defer></script>
+    <script>
+      loadCategories();
+    </script>
+  </body>
+</html>
