@@ -1,9 +1,9 @@
-
 * {
     box-sizing: border-box;
     position: relative;
 }
-body{
+
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -12,29 +12,29 @@ body{
     min-height: 100vh;
 }
 
-nav{
+nav {
     background-color: #f0f0f0;
     padding: 15px;
     flex-shrink: 0;
 }
 
-ul{
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    
+
 }
 
-li{
+li {
     display: inline;
     margin-right: 10px;
     padding: 5px 10px;
     border-radius: 5px;
     transition: ease-in 0.3s;
-    
+
 }
 
-li:hover{
+li:hover {
     -webkit-box-shadow: 2px 2px 10px 1px #4D4D4D;
     box-shadow: 2px 2px 10px 1px #4D4D4D;
 }
@@ -58,7 +58,7 @@ li:hover{
     flex: 0 0 100%;
 }
 
-.introduction section{
+.introduction section {
     border: 1px solid #000000;
     position: relative;
     padding: 10px;
@@ -80,33 +80,38 @@ section.section3 {
 }
 
 
-h2.section1{
+h2.section1 {
     color: #ff0000;
 }
-p.section1{
-    font-size: 16px;
-}
-h2.section2{
-    color: #00ff00;
-}
-p.section2{
-    font-size: 16px;
-}
-h2.section3{
-    color: #0000ff;
-}
-p.section3{
+
+p.section1 {
     font-size: 16px;
 }
 
-div.picturegallery{
+h2.section2 {
+    color: #00ff00;
+}
+
+p.section2 {
+    font-size: 16px;
+}
+
+h2.section3 {
+    color: #0000ff;
+}
+
+p.section3 {
+    font-size: 16px;
+}
+
+div.picturegallery {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
     margin-top: 20px;
 }
 
-figure{
+figure {
     margin: 10px;
     padding: 10px;
     border: 1px solid #cccccc;
@@ -114,52 +119,49 @@ figure{
     text-align: center;
 }
 
-figcaption{
+figcaption {
     margin-top: 5px;
     font-style: italic;
     color: #555555;
 }
 
-a{
+a {
     color: #0066cc;
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     text-decoration: underline;
 }
 
-div.links{
+div.links {
     margin: 20px;
     padding: 10px;
     border: 1px solid #000000;
-    
+
 }
 
-.links li{
+.links li {
     margin-bottom: 10px;
     display: inline-block;
     width: auto;
 
 }
 
-.links a{
+.links a {
     color: #ff6600;
     text-decoration: underline;
 }
 
-div.tables{
-    margin: 50px;
-    overflow-x: auto;
-    
-}   
-
-table{
+table {
     width: 40%;
     border-collapse: collapse;
     margin: 0 auto;
+    overflow-x: auto;
 }
-th, td{
+
+th,
+td {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
@@ -182,35 +184,32 @@ th, td{
         font-size: 14px;
     }
 
-    div.tables{
-        margin: 0;
-    }
-
-    th, td {
+    th,
+    td {
         padding: 6px;
     }
 
-    div.links{
+    div.links {
         margin: 10px;
         padding: 5px;
     }
 
-    .links li{
+    .links li {
         margin-bottom: 5px;
         display: block;
 
     }
 
     .section1 {
-    flex: 0 0 100%;
+        flex: 0 0 100%;
     }
 
     .section2 {
-    flex: 0 0 100%;
+        flex: 0 0 100%;
     }
 
     .section3 {
-    flex: 0 0 100%;
+        flex: 0 0 100%;
     }
 }
 
@@ -221,7 +220,7 @@ h1 {
     margin-top: 20px;
     font-size: 2.5em;
     font-weight: bold;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 p {
@@ -240,7 +239,7 @@ p {
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: #f9f9f9;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .admin-form input {
@@ -284,7 +283,7 @@ p {
     border: 1px solid #ddd;
     border-radius: 4px;
     background-color: #fff;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .admin-list li button {
