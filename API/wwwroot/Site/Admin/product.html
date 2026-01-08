@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/style/style.css" />
-    <title>Opgave 1 | Category</title>
+    <title>Opgave 1 | Product</title>
   </head>
   <body>
     <nav>
@@ -13,32 +13,21 @@
         <li><a href="/Site/picture.html">Billeder</a></li>
         <li><a href="/Site/links.html">Links</a></li>
         <li><a href="/Site/tables.html">Tabeller</a></li>
-        <li><a href="#">Kategorier</a></li>
+        <li><a href="/Site/Admin/category.html">Kategorier</a></li>
         <li><a href="/Site/Admin/customer.html">Kunder</a></li>
-        <li><a href="/Site/Admin/product.html">Produkter</a></li>
+        <li><a href="#">Produkter</a></li>
       </ul>
     </nav>
     <main>
-    <h1>Category Administration</h1>
-    <p>Overse dine kategorier her.</p>
+    <h1>Product List</h1>
+    <p>Vis dine produkter her.</p>
 
-    <form id="categoryForm" class="admin-form">
-      <input
-        type="text"
-        id="categoryName"
-        name="categoryName"
-        placeholder="Category Name"
-        requi red
-      />
-      <button type="submit">Add Category</button>
-    </form>
-
-    <ul id="categoryList" class="admin-list"></ul>
+    <ul id="productList" class="admin-list"></ul>
     </main>
     <footer>
       <p>&copy; 2026</p>
     </footer>
 
-    <script src="/JavaScript/category.js" defer></script>
+    <script src="/JavaScript/product.js" defer></script>
   </body>
 </html>
